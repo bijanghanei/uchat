@@ -14,7 +14,7 @@ services:
     build: .
     container_name: telegram-ai-bot
     environment:
-      - TELEGRAM_BOT_TOKEN=7899174821:AAFQptWye0nSsxBdOdl6HMfJrtPfYlUTCqQ
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
     depends_on:
       - ollama
     restart: unless-stopped
